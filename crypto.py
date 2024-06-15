@@ -85,5 +85,5 @@ def crypto_screener(symbol):
 while True:           
     for i in symbol:
         crypto_screener(i)
-    time.sleep(880)
+    time.sleep(800)
     
