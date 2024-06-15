@@ -70,7 +70,7 @@ def crypto_screener(symbol):
         send_telegram_message(message)
         
       elif (close[-2] < sma50[-2] and
-          high[-2] < sma50[-2] and
+          high[-2] > sma50[-2] and
           close[-2] < open[-2] and  # red candle
           rsi[-2] <= 43 and
           volume[-2] > volume[-3]):
