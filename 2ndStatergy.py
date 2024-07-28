@@ -51,10 +51,16 @@ def candelstick(symbol,interval):
     # Strategy conditions
     try:
         if (ema[-2] < sma[-2]) and (latest_high> sma[-2]) and (close[-2] < ema[-2]):
-            print(f"Sell {symbol}")
+            print(f"Sell {symbol} for {interval} timeframe")
     except:
         pass
 
 
 for i in symbol:
     candelstick(i,15)
+
+for i in symbol:
+    candelstick(i,30)
+
+for i in symbol:
+    candelstick(i,60)
