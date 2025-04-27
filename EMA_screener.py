@@ -58,6 +58,8 @@ def crypto_screener(symbol,interval,hours):
 
 # Run screener for all symbols
 for symbol in symbols_data:
+    #change Timeframe (Interval) and Hours as per your requirment below.
+    
     crypto_screener(symbol,interval="60",hours = 24)  #interval "15" or "30" or "60" or "2h" or "4h" or "1d"
                                                         # hours should be based on Interval
                                                         #for 60 or below hours will be 24
