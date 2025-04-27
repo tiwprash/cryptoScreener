@@ -49,8 +49,6 @@ def crypto_screener(symbol,interval,hours):
         ):
             print(f"🟢 MATCH: {symbol}")
 
-        else:
-            print(f"{symbol}-- {close[-2]}")
 
     except Exception as e:
         print(f"⚠️ Error for {symbol}: {e}")
